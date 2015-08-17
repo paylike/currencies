@@ -2,5 +2,8 @@
 	"name": "paylike-currencies",
 	"description": "List of the currencies supported by Paylike",
 	"main": "index.js",
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"dependencies": {
+		"index-by": "0.0.1"
+	}
 }
