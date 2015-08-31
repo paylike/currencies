@@ -49,3 +49,36 @@ This module contains a list of the currencies supported by Paylike
 - USD (United States dollar)
 - VND (Vietnamese dong)
 - ZAR (South African rand)
+
+## Usage
+
+Make sure to tag any dependency on this library with the current version to
+ensure future installs of your application will work. Like so:
+
+```json
+"dependencies": {
+	"paylike-currencies": "paylike/currencies#v1.0.x"
+}
+```
+
+The above entry will keep you on the `1.0.x` branch which will not have
+breaking changes merged.
+
+```js
+var currencies = require('paylike-currencies');
+
+currencies // returns an array with supported currencies
+	//	[{
+	//		code: 'AED',
+	//		currency: 'United Arab Emirates dirham',
+	//	}, {
+	//		code: 'ARS',
+	//		currency: 'Argentine peso',
+	//	}, {
+	//		code: 'AUD',
+	//		currency: 'Australian dollar',
+	//	}, ...]
+
+currencies.byCode['AED'] // { code: 'AED', currency: 'United Arab Emirates dirham' }
+
+```
