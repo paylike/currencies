@@ -57,11 +57,11 @@ your application will work. Like so:
 
 ```json
 "dependencies": {
-	"paylike-currencies": "paylike/currencies#v1.0.x"
+	"paylike-currencies": "paylike/currencies#v1.x"
 }
 ```
 
-This will keep you on the `1.0.x` branch which will not have breaking changes
+This will keep you on the `1.x` branch which will not have breaking changes
 merged.
 
 ```js
