@@ -1,6 +1,6 @@
-# Paylike Currencies
+# Currencies
 
-This module contains a list of the currencies supported by Paylike
+Currencies supported by Paylike
 
 - AED (United Arab Emirates dirham)
 - ARS (Argentine peso)
@@ -52,8 +52,8 @@ This module contains a list of the currencies supported by Paylike
 
 ## Usage
 
-Make sure to tag any dependency on this library with the current version to
-ensure future installs of your application will work. Like so:
+Pin the dependency to the current version branch to ensure future installs of
+your application will work. Like so:
 
 ```json
 "dependencies": {
@@ -61,24 +61,32 @@ ensure future installs of your application will work. Like so:
 }
 ```
 
-The above entry will keep you on the `1.0.x` branch which will not have
-breaking changes merged.
+This will keep you on the `1.0.x` branch which will not have breaking changes
+merged.
 
 ```js
 var currencies = require('paylike-currencies');
 
-currencies // returns an array with supported currencies
-	//	[{
-	//		code: 'AED',
-	//		currency: 'United Arab Emirates dirham',
-	//	}, {
-	//		code: 'ARS',
-	//		currency: 'Argentine peso',
-	//	}, {
-	//		code: 'AUD',
-	//		currency: 'Australian dollar',
-	//	}, ...]
+currencies;
+/*
+[
+	{
+		code: 'AED',
+		currency: 'United Arab Emirates dirham',
+	},
+	{
+		code: 'ARS',
+		currency: 'Argentine peso',
+	},
+	{
+		code: 'AUD',
+		currency: 'Australian dollar',
+	},
+	...
+]
+*/
 
-currencies.byCode['AED'] // { code: 'AED', currency: 'United Arab Emirates dirham' }
-
+// lookup by code
+currencies.byCode['AED']
+// { code: 'AED', currency: 'United Arab Emirates dirham' }
 ```
