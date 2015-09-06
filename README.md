@@ -50,6 +50,23 @@ Currencies supported by Paylike
 - VND (Vietnamese dong)
 - ZAR (South African rand)
 
+## Funding currencies
+
+These are the currencies you can use as a base for your account, the so called
+funding currency.
+
+### Global
+
+- EUR (Euro)
+- USD (United States dollar)
+- GBP (British pound sterling)
+
+### Nordic
+
+- DKK (Danish krone)
+- NOK (Norwegian krone)
+- SEK (Swedish krona)
+
 ## Usage
 
 Pin the dependency to the current version branch to ensure future installs of
@@ -74,13 +91,11 @@ currencies;
 		code: 'AED',
 		currency: 'United Arab Emirates dirham',
 	},
+	...
 	{
-		code: 'ARS',
-		currency: 'Argentine peso',
-	},
-	{
-		code: 'AUD',
-		currency: 'Australian dollar',
+		code: 'DKK',
+		currency: 'Danish krone',
+		funding: true,
 	},
 	...
 ]
@@ -89,4 +104,19 @@ currencies;
 // lookup by code
 currencies.byCode['AED']
 // { code: 'AED', currency: 'United Arab Emirates dirham' }
+
+// list supported funding currencies
+currencies
+	.filter(x => x.funding)
+	.map(x => x.currency);
+/*
+[
+	'Danish krone',
+	'Euro',
+	'British pound sterling',
+	'Norwegian krone',
+	'Swedish krona',
+	'United States dollar',
+]
+*/
 ```

@@ -56,6 +56,7 @@ module.exports = [
 	{
 		code: 'DKK',
 		currency: 'Danish krone',
+		funding: true,
 	},
 	{
 		code: 'DOP',
@@ -68,10 +69,12 @@ module.exports = [
 	{
 		code: 'EUR',
 		currency: 'Euro',
+		funding: true,
 	},
 	{
 		code: 'GBP',
 		currency: 'British pound sterling',
+		funding: true,
 	},
 	{
 		code: 'HKD',
@@ -120,6 +123,7 @@ module.exports = [
 	{
 		code: 'NOK',
 		currency: 'Norwegian krone',
+		funding: true,
 	},
 	{
 		code: 'NZD',
@@ -152,6 +156,7 @@ module.exports = [
 	{
 		code: 'SEK',
 		currency: 'Swedish krona',
+		funding: true,
 	},
 	{
 		code: 'SGD',
@@ -180,6 +185,7 @@ module.exports = [
 	{
 		code: 'USD',
 		currency: 'United States dollar',
+		funding: true,
 	},
 	{
 		code: 'VND',
