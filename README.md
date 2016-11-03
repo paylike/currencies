@@ -90,11 +90,13 @@ currencies;
 	{
 		code: 'AED',
 		currency: 'United Arab Emirates dirham',
+		numeric: '784',
 	},
 	...
 	{
 		code: 'DKK',
 		currency: 'Danish krone',
+		numeric: '208',
 		funding: true,
 	},
 	...
@@ -103,7 +105,7 @@ currencies;
 
 // lookup by code
 currencies.byCode['AED']
-// { code: 'AED', currency: 'United Arab Emirates dirham' }
+// { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
 
 // list supported funding currencies
 currencies
