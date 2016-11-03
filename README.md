@@ -74,11 +74,11 @@ your application will work. Like so:
 
 ```json
 "dependencies": {
-	"paylike-currencies": "paylike/currencies#v1.x"
+	"paylike-currencies": "paylike/currencies#v2.x"
 }
 ```
 
-This will keep you on the `1.x` branch which will not have breaking changes
+This will keep you on the `2.x` branch which will not have breaking changes
 merged.
 
 ```js
@@ -104,7 +104,12 @@ currencies;
 */
 
 // lookup by code
-currencies.byCode['AED']
+var currencies = require('paylike-currencies');
+var indexBy = require('index-by');
+
+byCode = indexBy(currencies, 'code');
+
+byCode['AED']
 // { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
 
 // list supported funding currencies
