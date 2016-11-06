@@ -4,8 +4,5 @@
 	"repository": "paylike/currencies",
 	"main": "index.js",
 	"version": "0.0.1",
-	"dependencies": {
-		"index-by": "0.0.1"
-	},
 	"license": "MIT"
 }
