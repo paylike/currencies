@@ -74,15 +74,12 @@ your application will work. Like so:
 
 ```json
 "dependencies": {
-	"paylike-currencies": "paylike/currencies#v2.x"
+	"@paylike/currencies": "^1.0.0"
 }
 ```
 
-This will keep you on the `2.x` branch which will not have breaking changes
-merged.
-
 ```js
-var currencies = require('paylike-currencies');
+var currencies = require('@paylike/currencies');
 
 currencies;
 /*
@@ -104,7 +101,7 @@ currencies;
 */
 
 // lookup by code
-var currencies = require('paylike-currencies');
+var currencies = require('@paylike/currencies');
 var indexBy = require('index-by');
 
 byCode = indexBy(currencies, 'code');
