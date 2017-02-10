@@ -180,7 +180,7 @@ your application will work. Like so:
 
 ```json
 "dependencies": {
-	"@paylike/currencies": "^1.0.0"
+	"@paylike/currencies": "^2.0.0"
 }
 ```
 
