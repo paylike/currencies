@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = [
+var currencies = [
 	{
 		code: 'AED',
 		currency: 'United Arab Emirates dirham',
@@ -926,3 +926,29 @@ module.exports = [
 		exponent: 2,
 	},
 ];
+
+module.exports = currencies;
+
+currencies.byCode = byCode;
+currencies.byNumeric = byNumeric;
+
+var codeMap;
+var numericMap;
+
+function byCode(){
+	if (!codeMap)
+		codeMap = new Map(currencies.map(function( currency ){
+			return [ currency.code, currency ];
+		}));
+
+	return codeMap;
+}
+
+function byNumeric(){
+	if (!numericMap)
+		numericMap = new Map(currencies.map(function( currency ){
+			return [ currency.numeric, currency ];
+		}));
+
+	return numericMap;
+}
