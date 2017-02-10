@@ -6,5 +6,8 @@
 	"scripts": {
 		"test": "node test"
 	},
+	"devDependencies": {
+		"tape": "^4.6.3"
+	},
 	"license": "MIT"
 }
