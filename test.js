@@ -11,6 +11,7 @@ test(function( t ){
 		currency: 'Euro',
 		numeric: '978',
 		funding: true,
+		exponent: 2,
 	});
 
 	t.end();

@@ -194,12 +194,14 @@ currencies;
 		code: 'AED',
 		currency: 'United Arab Emirates dirham',
 		numeric: '784',
+		exponent: 2,
 	},
 	...
 	{
 		code: 'DKK',
 		currency: 'Danish krone',
 		numeric: '208',
+		exponent: 2,
 		funding: true,
 	},
 	...
