@@ -25,5 +25,8 @@ test(function( t ){
 	t.deepEqual(currencies.byCode().get('EUR'), EUR);
 	t.deepEqual(currencies.byNumeric().get('978'), EUR);
 
+	t.deepEqual(currencies.byCode('EUR'), EUR);
+	t.deepEqual(currencies.byNumeric('978'), EUR);
+
 	t.end();
 });

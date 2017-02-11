@@ -210,12 +210,12 @@ currencies;
 
 // lookup by code
 var currencies = require('@paylike/currencies');
-var indexBy = require('index-by');
 
-byCode = indexBy(currencies, 'code');
-
-byCode['AED']
+currencies.byCode('AED');
 // { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
+
+currencies.byCode();
+	// Map()
 
 // list supported funding currencies
 currencies

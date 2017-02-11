@@ -935,20 +935,26 @@ currencies.byNumeric = byNumeric;
 var codeMap;
 var numericMap;
 
-function byCode(){
+function byCode( code ){
 	if (!codeMap)
 		codeMap = new Map(currencies.map(function( currency ){
 			return [ currency.code, currency ];
 		}));
 
+	if (code)
+		return codeMap.get(code);
+
 	return codeMap;
 }
 
-function byNumeric(){
+function byNumeric( numeric ){
 	if (!numericMap)
 		numericMap = new Map(currencies.map(function( currency ){
 			return [ currency.numeric, currency ];
 		}));
+
+	if (numeric)
+		return numericMap.get(numeric);
 
 	return numericMap;
 }
