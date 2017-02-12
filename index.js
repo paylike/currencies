@@ -938,7 +938,7 @@ var codeMap;
 var numericMap;
 
 function byCode( code ){
-	if (!codeMap)
+	if (codeMap === undefined)
 		codeMap = new Map(currencies.map(function( currency ){
 			return [ currency.code, currency ];
 		}));
@@ -950,7 +950,7 @@ function byCode( code ){
 }
 
 function byNumeric( numeric ){
-	if (!numericMap)
+	if (numericMap === undefined)
 		numericMap = new Map(currencies.map(function( currency ){
 			return [ currency.numeric, currency ];
 		}));
