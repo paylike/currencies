@@ -33,5 +33,8 @@ test(function( t ){
 	t.equal(currencies.toMajor('JPY', 1), 1);
 	t.equal(currencies.toMinor('JPY', 1), 1);
 
+	t.equal(currencies.byCode(''), undefined);
+	t.equal(currencies.byNumeric(''), undefined);
+
 	t.end();
 });

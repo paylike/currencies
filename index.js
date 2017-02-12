@@ -943,7 +943,7 @@ function byCode( code ){
 			return [ currency.code, currency ];
 		}));
 
-	if (code)
+	if (code !== undefined)
 		return codeMap.get(code);
 
 	return codeMap;
@@ -955,7 +955,7 @@ function byNumeric( numeric ){
 			return [ currency.numeric, currency ];
 		}));
 
-	if (numeric)
+	if (numeric !== undefined)
 		return numericMap.get(numeric);
 
 	return numericMap;
