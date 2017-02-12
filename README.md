@@ -188,31 +188,29 @@ your application will work. Like so:
 var currencies = require('@paylike/currencies');
 
 currencies;
-/*
-[
-	{
-		code: 'AED',
-		currency: 'United Arab Emirates dirham',
-		numeric: '784',
-		exponent: 2,
-	},
-	...
-	{
-		code: 'DKK',
-		currency: 'Danish krone',
-		numeric: '208',
-		exponent: 2,
-		funding: true,
-	},
-	...
-]
-*/
+	/*
+	[
+		{
+			code: 'AED',
+			currency: 'United Arab Emirates dirham',
+			numeric: '784',
+			exponent: 2,
+		},
+		...
+		{
+			code: 'DKK',
+			currency: 'Danish krone',
+			numeric: '208',
+			exponent: 2,
+			funding: true,
+		},
+		...
+	]
+	*/
 
 // lookup by code
-var currencies = require('@paylike/currencies');
-
 currencies.byCode('AED');
-// { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
+	// { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
 
 currencies.byCode();
 	// Map()
@@ -221,14 +219,14 @@ currencies.byCode();
 currencies
 	.filter(x => x.funding)
 	.map(x => x.currency);
-/*
-[
-	'Danish krone',
-	'Euro',
-	'Pound sterling',
-	'Norwegian krone',
-	'Swedish krona',
-	'United States dollar',
-]
-*/
+	/*
+	[
+		'Danish krone',
+		'Euro',
+		'Pound sterling',
+		'Norwegian krone',
+		'Swedish krona',
+		'United States dollar',
+	]
+	*/
 ```
