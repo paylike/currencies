@@ -931,6 +931,8 @@ module.exports = currencies;
 
 currencies.byCode = byCode;
 currencies.byNumeric = byNumeric;
+currencies.toMinor = toMinor;
+currencies.toMajor = toMajor;
 
 var codeMap;
 var numericMap;
@@ -957,4 +959,12 @@ function byNumeric( numeric ){
 		return numericMap.get(numeric);
 
 	return numericMap;
+}
+
+function toMinor( currency, major ){
+	return major * Math.pow(10, currencies.byCode(currency).exponent);
+}
+
+function toMajor( currency, minor ){
+	return minor / Math.pow(10, currencies.byCode(currency).exponent);
 }

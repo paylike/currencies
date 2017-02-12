@@ -28,5 +28,10 @@ test(function( t ){
 	t.deepEqual(currencies.byCode('EUR'), EUR);
 	t.deepEqual(currencies.byNumeric('978'), EUR);
 
+	t.equal(currencies.toMajor('EUR', 100), 1.00);
+	t.equal(currencies.toMinor('EUR', 1), 100);
+	t.equal(currencies.toMajor('JPY', 1), 1);
+	t.equal(currencies.toMinor('JPY', 1), 1);
+
 	t.end();
 });

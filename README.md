@@ -229,4 +229,11 @@ currencies
 		'United States dollar',
 	]
 	*/
+
+// Convert between minor and major respecting the exponent
+currencies.toMinor('DKK', 100.00);
+	// 10000
+
+currencies.toMajor('DKK', 10000);
+	// 100.00
 ```
