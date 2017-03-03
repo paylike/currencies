@@ -26,8 +26,10 @@ funding currency.
 
 ## Usage
 
-Pin the dependency to the current version branch to ensure future installs of
-your application will work. Like so:
+Within the Paylike ecosystem you should use the `code` to refer to a currency.
+
+Pin to the current version branch to ensure future installs of your
+application will work. Like so:
 
 ```json
 "dependencies": {
