@@ -35,6 +35,10 @@ test(function( t ){
 	t.equal(currencies.toMajor('JPY', 0), 0);
 	t.equal(currencies.toMinor('JPY', 0), 0);
 
+	t.equal(currencies.toMinor('EUR', 19.9), 1990);
+	t.equal(currencies.toMinor('EUR', 19.99), 1999);
+	t.equal(currencies.toMinor('EUR', 19.01), 1901);
+
 	t.equal(currencies.byCode(''), undefined);
 	t.equal(currencies.byNumeric(''), undefined);
 
