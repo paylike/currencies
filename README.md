@@ -33,7 +33,7 @@ application will work. Like so:
 
 ```json
 "dependencies": {
-	"@paylike/currencies": "^2.0.1"
+	"@paylike/currencies": "^3.0.0"
 }
 ```
 
