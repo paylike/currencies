@@ -165,6 +165,7 @@
 		"code": "CHF",
 		"currency": "Swiss franc",
 		"numeric": "756",
+		"funding": true,
 		"exponent": 2
 	},
 	{
@@ -348,6 +349,7 @@
 		"code": "HUF",
 		"currency": "Hungarian forint",
 		"numeric": "348",
+		"funding": true,
 		"exponent": 2
 	},
 	{
@@ -649,6 +651,7 @@
 		"code": "PLN",
 		"currency": "Polish złoty",
 		"numeric": "985",
+		"funding": true,
 		"exponent": 2
 	},
 	{
@@ -667,6 +670,7 @@
 		"code": "RON",
 		"currency": "Romanian leu",
 		"numeric": "946",
+		"funding": true,
 		"exponent": 2
 	},
 	{
