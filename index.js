@@ -14,7 +14,7 @@ var numericMap;
 
 function byCode( code ){
 	if (codeMap === undefined)
-		codeMap = new Map(currencies.map(function( currency ){
+		codeMap = createMap(currencies.map(function( currency ){
 			return [ currency.code, currency ];
 		}));
 
@@ -26,7 +26,7 @@ function byCode( code ){
 
 function byNumeric( numeric ){
 	if (numericMap === undefined)
-		numericMap = new Map(currencies.map(function( currency ){
+		numericMap = createMap(currencies.map(function( currency ){
 			return [ currency.numeric, currency ];
 		}));
 
@@ -42,4 +42,14 @@ function toMinor( currency, major ){
 
 function toMajor( currency, minor ){
 	return minor / Math.pow(10, byCode(currency).exponent);
+}
+
+// IE 11 does not support new Map(iterable)
+function createMap( entries ){
+	var map = new Map();
+
+	for (var i = 0;i < entries.length;i++)
+		map.set(entries[i][0], entries[i][1]);
+
+	return map;
 }
