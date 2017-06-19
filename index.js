@@ -37,9 +37,9 @@ function byNumeric( numeric ){
 }
 
 function toMinor( currency, major ){
-	return Math.round(major * Math.pow(10, currencies.byCode(currency).exponent));
+	return Math.round(major * Math.pow(10, byCode(currency).exponent));
 }
 
 function toMajor( currency, minor ){
-	return minor / Math.pow(10, currencies.byCode(currency).exponent);
+	return minor / Math.pow(10, byCode(currency).exponent);
 }
