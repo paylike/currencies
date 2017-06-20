@@ -9,8 +9,8 @@ Read more:
 
 ## Account currencies
 
-These are the currencies you can use as a base for your account, the so called
-funding currency.
+These are the currencies you can use as a base for your account. Also known as
+account, settlement and funding currency.
 
 ### Global
 
