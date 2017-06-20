@@ -24,6 +24,13 @@ account, settlement and funding currency.
 - NOK (Norwegian krone)
 - SEK (Swedish krona)
 
+### Other EU
+
+- CHF (Swiss franc)
+- HUF (Hungarian forint)
+- PLN (Polish złoty)
+- RON (Romanian leu)
+
 ## Usage
 
 Within the Paylike ecosystem you should use the `code` to refer to a currency.
@@ -74,10 +81,14 @@ currencies
 	.map(x => x.currency);
 	/*
 	[
+		'Swiss franc',
 		'Danish krone',
 		'Euro',
 		'Pound sterling',
+		'Hungarian forint',
 		'Norwegian krone',
+		'Polish złoty',
+		'Romanian leu',
 		'Swedish krona',
 		'United States dollar',
 	]
