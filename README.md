@@ -35,15 +35,6 @@ account, settlement and funding currency.
 
 Within the Paylike ecosystem you should use the `code` to refer to a currency.
 
-Pin to the current version branch to ensure future installs of your
-application will work. Like so:
-
-```json
-"dependencies": {
-	"@paylike/currencies": "^3.0.0"
-}
-```
-
 ```js
 var currencies = require('@paylike/currencies');
 
