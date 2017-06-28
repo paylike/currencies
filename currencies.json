@@ -81,6 +81,7 @@
 		"code": "BGN",
 		"currency": "Bulgarian lev",
 		"numeric": "975",
+		"funding": true,
 		"exponent": 2
 	},
 	{
@@ -208,6 +209,7 @@
 		"code": "CZK",
 		"currency": "Czech koruna",
 		"numeric": "203",
+		"funding": true,
 		"exponent": 2
 	},
 	{

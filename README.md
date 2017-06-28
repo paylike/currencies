@@ -30,6 +30,8 @@ account, settlement and funding currency.
 - HUF (Hungarian forint)
 - PLN (Polish złoty)
 - RON (Romanian leu)
+- CZK (Czech koruna)
+- BGN (Bulgarian lev)
 
 ## Usage
 
@@ -72,7 +74,9 @@ currencies
 	.map(x => x.currency);
 	/*
 	[
+		'Bulgarian lev',
 		'Swiss franc',
+		'Czech koruna',
 		'Danish krone',
 		'Euro',
 		'Pound sterling',
