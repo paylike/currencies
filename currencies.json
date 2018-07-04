@@ -339,6 +339,7 @@
 		"code": "HRK",
 		"currency": "Croatian kuna",
 		"numeric": "191",
+		"funding": true,
 		"exponent": 2
 	},
 	{

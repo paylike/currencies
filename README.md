@@ -32,6 +32,7 @@ account, settlement and funding currency.
 - RON (Romanian leu)
 - CZK (Czech koruna)
 - BGN (Bulgarian lev)
+- HRK (Croatian kuna)
 
 ## Usage
 
@@ -80,6 +81,7 @@ currencies
 		'Danish krone',
 		'Euro',
 		'Pound sterling',
+		'Croatian kuna',
 		'Hungarian forint',
 		'Norwegian krone',
 		'Polish złoty',
