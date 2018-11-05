@@ -536,9 +536,9 @@
 		"exponent": 2
 	},
 	{
-		"code": "MRO",
+		"code": "MRU",
 		"currency": "Mauritanian ouguiya",
-		"numeric": "478",
+		"numeric": "929",
 		"exponent": 2
 	},
 	{
@@ -756,9 +756,9 @@
 		"exponent": 2
 	},
 	{
-		"code": "STD",
+		"code": "STN",
 		"currency": "São Tomé and Príncipe dobra",
-		"numeric": "678",
+		"numeric": "930",
 		"exponent": 2
 	},
 	{
@@ -859,9 +859,9 @@
 		"exponent": 2
 	},
 	{
-		"code": "VEF",
-		"currency": "Venezuelan bolívar",
-		"numeric": "937",
+		"code": "VES",
+		"currency": "Venezuelan bolívar soberano",
+		"numeric": "928",
 		"exponent": 2
 	},
 	{
