@@ -353,7 +353,7 @@
 		"currency": "Hungarian forint",
 		"numeric": "348",
 		"funding": true,
-		"exponent": 2
+		"exponent": 0
 	},
 	{
 		"code": "IDR",
