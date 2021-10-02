@@ -859,12 +859,6 @@
 		"exponent": 2
 	},
 	{
-		"code": "VES",
-		"currency": "Venezuelan bolívar soberano",
-		"numeric": "928",
-		"exponent": 2
-	},
-	{
 		"code": "VND",
 		"currency": "Vietnamese dong",
 		"numeric": "704",
