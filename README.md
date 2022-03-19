@@ -2,6 +2,8 @@
 
 List of currencies supported by Paylike for transactions and accounts.
 
+Currencies flagged `deprecated` are no longer supported.
+
 Read more:
 
 - https://paylike.io/account/currency

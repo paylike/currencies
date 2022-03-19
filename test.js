@@ -16,6 +16,8 @@ test(function( t ){
 
 	t.deepEqual(currencies.find(e => e.code === 'EUR'), EUR);
 
+	t.equal(currencies.find(e => e.code === 'VES').deprecated, true);
+
 	t.equal(typeof currencies.byCode, 'function');
 	t.equal(typeof currencies.byNumeric, 'function');
 
