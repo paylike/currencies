@@ -859,6 +859,12 @@
 		"exponent": 2
 	},
 	{
+		"code": "VEF",
+		"currency": "Venezuelan bolívar",
+		"numeric": "937",
+		"exponent": 2
+	},
+	{
 		"code": "VND",
 		"currency": "Vietnamese dong",
 		"numeric": "704",
