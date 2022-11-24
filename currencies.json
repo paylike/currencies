@@ -745,10 +745,17 @@
 		"exponent": 2
 	},
 	{
+		"code":"SLE",
+		"currency": "Sierra Leonean leone",
+		"numeric":"925",
+		"exponent":"2"
+	},
+	{
 		"code": "SLL",
 		"currency": "Sierra Leonean leone",
 		"numeric": "694",
-		"exponent": 2
+		"exponent": 2,
+		"deprecated": true
 	},
 	{
 		"code": "SOS",
