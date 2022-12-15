@@ -339,8 +339,8 @@
 		"code": "HRK",
 		"currency": "Croatian kuna",
 		"numeric": "191",
-		"funding": true,
-		"exponent": 2
+		"exponent": 2,
+		"deprecated": true
 	},
 	{
 		"code": "HTG",

@@ -34,7 +34,6 @@ account, settlement and funding currency.
 - RON (Romanian leu)
 - CZK (Czech koruna)
 - BGN (Bulgarian lev)
-- HRK (Croatian kuna)
 
 ## Usage
 
