@@ -9,5 +9,24 @@
 	"devDependencies": {
 		"tape": "^4.6.3"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"prettier": {
+		"semi": false,
+		"singleQuote": true,
+		"useTabs": true,
+		"bracketSpacing": true,
+		"trailingComma": "es5",
+		"tabWidth": 4,
+		"proseWrap": "always",
+		"printWidth": 80,
+		"overrides": [
+			{
+				"files": "*.md",
+				"options": {
+					"useTabs": false,
+					"tabWidth": 2
+				}
+			}
+		]
+	}
 }

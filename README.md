@@ -41,10 +41,10 @@ account, settlement and funding currency.
 Within the Paylike ecosystem you should use the `code` to refer to a currency.
 
 ```js
-var currencies = require('@paylike/currencies');
+var currencies = require('@paylike/currencies')
 
-currencies;
-	/*
+currencies
+/*
 	[
 		{
 			code: 'AED',
@@ -65,17 +65,15 @@ currencies;
 	*/
 
 // lookup by code
-currencies.byCode('AED');
-	// { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
+currencies.byCode('AED')
+// { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
 
-currencies.byCode();
-	// Map()
+currencies.byCode()
+// Map()
 
 // list supported funding currencies
-currencies
-	.filter(x => x.funding)
-	.map(x => x.currency);
-	/*
+currencies.filter((x) => x.funding).map((x) => x.currency)
+/*
 	[
 		'Bulgarian lev',
 		'Swiss franc',
@@ -94,9 +92,9 @@ currencies
 	*/
 
 // Convert between minor and major respecting the exponent
-currencies.toMinor('DKK', 100.00);
-	// 10000
+currencies.toMinor('DKK', 100.0)
+// 10000
 
-currencies.toMajor('DKK', 10000);
-	// 100.00
+currencies.toMajor('DKK', 10000)
+// 100.00
 ```
