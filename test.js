@@ -1,6 +1,5 @@
-'use strict'
-const test = require('tape')
-const currencies = require('.')
+import test from 'tape'
+import currencies from './index.js'
 
 const EUR = {
 	code: 'EUR',

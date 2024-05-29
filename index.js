@@ -1,7 +1,6 @@
-'use strict'
-const currencies = require('./currencies.json')
+import currencies from './currencies.json' with {type: 'json'}
 
-module.exports = currencies
+export default currencies
 
 currencies.byCode = byCode
 currencies.byNumeric = byNumeric
@@ -11,7 +10,7 @@ currencies.toMajor = toMajor
 let codeMap
 let numericMap
 
-function byCode(code) {
+export function byCode(code) {
 	if (codeMap === undefined)
 		codeMap = createMap(
 			currencies.map((currency) => {
@@ -24,7 +23,7 @@ function byCode(code) {
 	return codeMap
 }
 
-function byNumeric(numeric) {
+export function byNumeric(numeric) {
 	if (numericMap === undefined)
 		numericMap = createMap(
 			currencies.map((currency) => {
@@ -37,11 +36,11 @@ function byNumeric(numeric) {
 	return numericMap
 }
 
-function toMinor(currency, major) {
+export function toMinor(currency, major) {
 	return Math.round(major * 10 ** byCode(currency).exponent)
 }
 
-function toMajor(currency, minor) {
+export function toMajor(currency, minor) {
 	return minor / 10 ** byCode(currency).exponent
 }
 
