@@ -1,0 +1,30 @@
+{
+	"extends": ["airbnb-base", "prettier"],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": "latest"
+	},
+	"plugins": ["prettier"],
+	"rules": {
+		"strict": ["error", "safe"],
+		"prettier/prettier": ["error"],
+		"linebreak-style": ["error", "unix"],
+		"quotes": [
+			"error",
+			"single",
+			{"avoidEscape": true, "allowTemplateLiterals": true}
+		],
+		"no-restricted-syntax": [
+			"error",
+			"ForInStatement",
+			"LabeledStatement",
+			"WithStatement"
+		],
+		"no-use-before-define": ["error", {"functions": false}],
+		"max-classes-per-file": "off",
+		"no-useless-escape": "off",
+		"arrow-body-style": "off",
+		"import/extensions": ["warn", {"js":"always"}],
+		"no-else-return": "off"
+	}
+}

@@ -2,7 +2,8 @@
 	"name": "@paylike/currencies",
 	"description": "List of the currencies supported by Paylike",
 	"repository": "paylike/currencies",
-	"version": "4.2.0",
+	"version": "5.0.0",
+	"type": "module",
 	"scripts": {
 		"test": "node test"
 	},
