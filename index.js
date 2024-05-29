@@ -1,55 +1,56 @@
-'use strict';
+'use strict'
+const currencies = require('./currencies.json')
 
-var currencies = require('./currencies.json');
+module.exports = currencies
 
-module.exports = currencies;
+currencies.byCode = byCode
+currencies.byNumeric = byNumeric
+currencies.toMinor = toMinor
+currencies.toMajor = toMajor
 
-currencies.byCode = byCode;
-currencies.byNumeric = byNumeric;
-currencies.toMinor = toMinor;
-currencies.toMajor = toMajor;
+let codeMap
+let numericMap
 
-var codeMap;
-var numericMap;
-
-function byCode( code ){
+function byCode(code) {
 	if (codeMap === undefined)
-		codeMap = createMap(currencies.map(function( currency ){
-			return [ currency.code, currency ];
-		}));
+		codeMap = createMap(
+			currencies.map((currency) => {
+				return [currency.code, currency]
+			})
+		)
 
-	if (code !== undefined)
-		return codeMap.get(code);
+	if (code !== undefined) return codeMap.get(code)
 
-	return codeMap;
+	return codeMap
 }
 
-function byNumeric( numeric ){
+function byNumeric(numeric) {
 	if (numericMap === undefined)
-		numericMap = createMap(currencies.map(function( currency ){
-			return [ currency.numeric, currency ];
-		}));
+		numericMap = createMap(
+			currencies.map((currency) => {
+				return [currency.numeric, currency]
+			})
+		)
 
-	if (numeric !== undefined)
-		return numericMap.get(numeric);
+	if (numeric !== undefined) return numericMap.get(numeric)
 
-	return numericMap;
+	return numericMap
 }
 
-function toMinor( currency, major ){
-	return Math.round(major * Math.pow(10, byCode(currency).exponent));
+function toMinor(currency, major) {
+	return Math.round(major * 10 ** byCode(currency).exponent)
 }
 
-function toMajor( currency, minor ){
-	return minor / Math.pow(10, byCode(currency).exponent);
+function toMajor(currency, minor) {
+	return minor / 10 ** byCode(currency).exponent
 }
 
 // IE 11 does not support new Map(iterable)
-function createMap( entries ){
-	var map = new Map();
+function createMap(entries) {
+	const map = new Map()
 
-	for (var i = 0;i < entries.length;i++)
-		map.set(entries[i][0], entries[i][1]);
+	for (let i = 0; i < entries.length; i++)
+		map.set(entries[i][0], entries[i][1])
 
-	return map;
+	return map
 }
